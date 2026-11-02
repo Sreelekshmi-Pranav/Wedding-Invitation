@@ -1,0 +1,1129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sreelekshmi &amp; Pranav · 17 December 2026</title>
+    <meta
+      name="description"
+      content="The wedding of Sreelekshmi & Pranav · Thursday, 17 December 2026 · St. George College Auditorium, Aruvithura"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Noto+Serif+Malayalam:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ivory: #f6f1e7;
+        --ivory-deep: #ece4d4;
+        --night: #1c1510;
+        --brass: #b8893b;
+        --brass-soft: #e2c48c;
+        --leaf: #4c5a37;
+        --ink: #2a211a;
+        --ink-soft: #6b5d4f;
+        --line: rgba(42, 33, 26, 0.16);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: var(--ivory);
+        color: var(--ink);
+        font-family: "Jost", sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 1.8;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      a {
+        color: inherit;
+      }
+      .serif {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 500;
+      }
+      .label {
+        font-family: "Jost", sans-serif;
+        font-weight: 400;
+        font-size: 0.7rem;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: var(--brass);
+      }
+      .btn {
+        display: inline-block;
+        font-family: "Jost", sans-serif;
+        font-weight: 400;
+        font-size: 0.72rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border: 1px solid currentColor;
+        transition:
+          background 0.3s,
+          color 0.3s;
+      }
+      .btn:hover {
+        background: var(--ink);
+        color: var(--ivory);
+        border-color: var(--ink);
+      }
+      /* photo with a dark scrim for text on top */
+      .shot {
+        position: relative;
+        overflow: hidden;
+        background: var(--night);
+      }
+      .shot > img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .shot::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(20, 14, 9, 0.55);
+      }
+      .band.shot::after {
+        background: rgba(20, 12, 8, 0.5);
+      }
+      .shot > .over {
+        position: relative;
+        z-index: 1;
+      }
+
+      /* ganapati logo (gold line art, transparent png) */
+      .ganapati {
+        display: block;
+        width: 104px;
+        height: auto;
+        margin: 0 auto;
+      }
+
+      /* ============ OPENING ============ */
+      body:not(.opened) {
+        overflow: hidden;
+        height: 100vh;
+      }
+      #intro {
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        color: var(--ivory);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+        transition:
+          opacity 1s ease,
+          visibility 0s 1s;
+      }
+      #intro::after {
+        background: linear-gradient(
+          rgba(20, 14, 9, 0.55),
+          rgba(20, 14, 9, 0.78)
+        );
+      }
+      #intro.gone {
+        opacity: 0;
+        visibility: hidden;
+      }
+      #intro .over {
+        padding: 2rem;
+      }
+      #intro .over > * {
+        opacity: 0;
+        animation: rise 1.3s ease forwards;
+      }
+      #intro .ganapati {
+        width: clamp(96px, 22vw, 130px);
+        filter: drop-shadow(0 0 14px rgba(226, 196, 140, 0.35));
+      }
+      #intro .label {
+        color: var(--brass-soft);
+        margin-top: 1.8rem;
+        animation-delay: 0.4s;
+      }
+      #intro h1 {
+        font-size: clamp(2.8rem, 9vw, 5rem);
+        font-weight: 400;
+        line-height: 1.05;
+        margin-top: 0.8rem;
+        animation-delay: 0.7s;
+      }
+      #intro h1 em {
+        color: var(--brass-soft);
+        padding: 0 0.12em;
+      }
+      #intro .date {
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
+        font-size: 1.35rem;
+        margin-top: 0.6rem;
+        animation-delay: 1s;
+      }
+      #intro .tap {
+        margin-top: 3rem;
+        color: var(--ivory);
+        animation:
+          rise 1.3s ease 1.5s forwards,
+          blink 2.6s ease-in-out 2.8s infinite;
+      }
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(14px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      @keyframes blink {
+        50% {
+          opacity: 0.4;
+        }
+      }
+
+      /* ============ HEADER ============ */
+      /* sits over the first-page photo in ivory; turns into a solid ivory bar once you scroll */
+      header.bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.2rem clamp(1.5rem, 5vw, 4rem);
+        color: #f3ead9;
+        transition:
+          background 0.5s,
+          color 0.5s,
+          box-shadow 0.5s;
+      }
+      header.bar.scrolled {
+        background: rgba(246, 241, 231, 0.94);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line);
+        color: var(--ink);
+      }
+      .bar .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-decoration: none;
+        letter-spacing: 0.04em;
+      }
+      .bar .logo img {
+        width: 28px;
+        transition: filter 0.5s;
+      }
+      .bar.scrolled .logo img {
+        filter: brightness(0.75) sepia(0.5);
+      }
+      .bar .logo em {
+        color: var(--brass-soft);
+      }
+      .bar.scrolled .logo em {
+        color: var(--brass);
+      }
+      .bar nav {
+        display: flex;
+        gap: 2rem;
+      }
+      .bar nav a {
+        font-size: 0.7rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+      .bar nav a:hover {
+        color: var(--brass-soft);
+      }
+      .bar.scrolled nav a:hover {
+        color: var(--brass);
+      }
+
+      /* ============ HERO (full-bleed photo, names in gold) ============ */
+      .hero {
+        position: relative;
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden;
+        background: #1c1510;
+        color: #f3ead9;
+      }
+      .hero .bg {
+        position: absolute;
+        inset: -8% 0;
+        will-change: transform;
+      }
+      .hero .bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 30%;
+        filter: brightness(0.85) saturate(0.95);
+      }
+      .hero .bg::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(28, 21, 16, 0.5),
+            rgba(28, 21, 16, 0) 30%,
+            rgba(28, 21, 16, 0.15) 55%,
+            rgba(28, 21, 16, 0.92)
+          ),
+          radial-gradient(
+            70% 60% at 50% 100%,
+            rgba(184, 137, 59, 0.14),
+            transparent 70%
+          );
+      }
+      .hero .text {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        padding: 0 clamp(1.5rem, 5vw, 4rem) clamp(3.4rem, 8vh, 6rem);
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      body.opened .hero .text {
+        animation: heroIn 1.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0.6s forwards;
+      }
+      @keyframes heroIn {
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      .hero .label {
+        color: var(--brass-soft);
+      }
+      .hero h2 {
+        font-size: clamp(3rem, 8.5vw, 7rem);
+        font-weight: 500;
+        line-height: 0.98;
+        color: #f1dcae;
+        text-shadow: 0 4px 40px rgba(0, 0, 0, 0.6);
+        margin-top: 0.6rem;
+      }
+      .hero h2 em {
+        font-style: italic;
+        font-weight: 400;
+        color: var(--brass-soft);
+      }
+      .hero .ml {
+        font-family: "Noto Serif Malayalam", serif;
+        font-size: clamp(1.1rem, 2.6vw, 1.5rem);
+        color: rgba(243, 234, 217, 0.72);
+        margin-top: 0.6rem;
+      }
+      .hero .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem 2rem;
+        margin-top: 1.6rem;
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
+        font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+        color: #f3ead9;
+      }
+      .hero .meta span::before {
+        content: "\2726";
+        color: var(--brass-soft);
+        font-style: normal;
+        font-size: 0.7em;
+        margin-right: 0.7rem;
+      }
+      .hero .meta span:first-child::before {
+        content: none;
+      }
+
+      /* ============ SECTIONS ============ */
+      .wrap {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: clamp(5rem, 10vw, 8rem) clamp(1.5rem, 5vw, 4rem);
+      }
+      h3.serif {
+        font-size: clamp(2.2rem, 4.6vw, 3.4rem);
+        font-weight: 400;
+        line-height: 1.12;
+        margin-top: 0.8rem;
+      }
+
+      /* invitation: tall jasmine photo + text */
+      .invite {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: clamp(2.5rem, 6vw, 6rem);
+        align-items: center;
+      }
+      .invite .pic {
+        aspect-ratio: 3 / 4;
+        overflow: hidden;
+      }
+      .invite .pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .invite .parents {
+        font-size: 1.5rem;
+        line-height: 1.35;
+        margin-top: 1.8rem;
+      }
+      .invite p.body {
+        color: var(--ink-soft);
+        margin-top: 1.2rem;
+        max-width: 470px;
+      }
+      .invite .couple {
+        font-size: clamp(2rem, 4vw, 2.6rem);
+        margin-top: 1.4rem;
+        line-height: 1.2;
+      }
+      .invite .couple em {
+        color: var(--brass);
+        font-weight: 400;
+      }
+
+      /* full-bleed photo band */
+      .band {
+        min-height: 46vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: var(--ivory);
+        padding: 4rem 1.5rem;
+      }
+      .band .serif {
+        font-size: clamp(2.2rem, 5.5vw, 4.2rem);
+        font-weight: 400;
+        line-height: 1.05;
+      }
+      .band .serif em {
+        color: var(--brass-soft);
+      }
+      .band .label {
+        color: var(--brass-soft);
+        margin-top: 1.6rem;
+      }
+
+      /* details: three photo cards */
+      .details {
+        text-align: center;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1.6rem;
+        margin-top: 3.4rem;
+        text-align: left;
+      }
+      .card .pic {
+        aspect-ratio: 4 / 5;
+        overflow: hidden;
+      }
+      .card .pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 1.2s ease;
+      }
+      .card:hover .pic img {
+        transform: scale(1.04);
+      }
+      .card .label {
+        margin-top: 1.4rem;
+      }
+      .card .serif {
+        font-size: 1.85rem;
+        line-height: 1.2;
+        margin-top: 0.3rem;
+      }
+      .card .sub {
+        color: var(--ink-soft);
+      }
+      .details .links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 3.4rem;
+      }
+
+      /* countdown over the urli photo */
+      .count {
+        text-align: center;
+        color: var(--ivory);
+        padding: clamp(5rem, 10vw, 7rem) 1.5rem;
+      }
+      .count .label {
+        color: var(--brass-soft);
+      }
+      .count-row {
+        display: flex;
+        justify-content: center;
+        gap: clamp(1.8rem, 7vw, 5rem);
+        margin-top: 1.8rem;
+      }
+      .count-row b {
+        display: block;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 500;
+        font-size: clamp(2.8rem, 8vw, 4.6rem);
+        line-height: 1;
+        font-variant-numeric: tabular-nums;
+      }
+      .count-row small {
+        display: block;
+        margin-top: 0.6rem;
+        color: var(--ivory);
+        opacity: 0.8;
+      }
+
+      /* family */
+      .family {
+        text-align: center;
+      }
+      .family .names {
+        font-size: clamp(1.8rem, 4vw, 2.4rem);
+        line-height: 1.5;
+        margin-top: 1.2rem;
+      }
+      .family .names em {
+        color: var(--brass);
+        font-weight: 400;
+      }
+
+      footer {
+        background: var(--night);
+        color: var(--ivory);
+        text-align: center;
+        padding: 4.5rem 1.5rem 3rem;
+      }
+      footer .ganapati {
+        width: 64px;
+      }
+      footer .serif {
+        font-size: 1.8rem;
+        margin-top: 1.4rem;
+      }
+      footer .label {
+        color: var(--brass-soft);
+        margin-top: 0.4rem;
+      }
+      footer .credit {
+        margin-top: 2.6rem;
+        font-size: 0.72rem;
+        opacity: 0.5;
+      }
+
+      /* music toggle */
+      .music-btn {
+        position: fixed;
+        right: 1.2rem;
+        bottom: 1.2rem;
+        z-index: 40;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        border: 1px solid var(--brass);
+        background: var(--night);
+        color: var(--brass-soft);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .music-btn[hidden] {
+        display: none;
+      }
+      .music-btn svg {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+      }
+
+      /* reveal */
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition:
+          opacity 1s ease,
+          transform 1s ease;
+      }
+      .reveal.in {
+        opacity: 1;
+        transform: none;
+      }
+
+      @media (max-width: 860px) {
+        .bar nav {
+          display: none;
+        }
+        .bar {
+          justify-content: center;
+          padding: 1rem 1.5rem;
+        }
+        /* opening: stack the names so nothing clips */
+        #intro .over {
+          padding: 1.5rem;
+        }
+        #intro h1 {
+          font-size: clamp(2.4rem, 11vw, 4rem);
+        }
+        #intro h1 em {
+          display: block;
+          font-size: 0.6em;
+          line-height: 1.2;
+        }
+        #intro .badge {
+          width: 104px;
+          height: 104px;
+        }
+        /* hero on phones: fills the whole screen (dvh follows the browser bar), names stacked, details one per line */
+        .hero {
+          min-height: 100vh;
+          min-height: 100dvh;
+        }
+        .hero .bg img {
+          object-position: 50% 25%;
+        }
+        .hero h2 {
+          font-size: clamp(2.8rem, 13vw, 4.4rem);
+        }
+        .hero .meta {
+          flex-direction: column;
+          gap: 0.2rem;
+        }
+        .hero .meta span::before {
+          content: none;
+        }
+        /* invitation: single column on phones, portrait picture, keeps the statue whole */
+        .invite {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+        .invite .pic {
+          aspect-ratio: 4 / 5;
+          max-width: 300px;
+          margin: 0 auto;
+        }
+        .invite .reveal:last-child {
+          text-align: center;
+        }
+        .invite p.body {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        /* parents' names on one line: size follows the screen width */
+        .invite .parents {
+          font-size: clamp(0.95rem, 4.6vw, 1.5rem);
+          white-space: nowrap;
+          letter-spacing: 0.01em;
+        }
+        /* band */
+        .band {
+          min-height: 0;
+          padding: 3.4rem 1.5rem;
+        }
+        .band .serif {
+          font-size: clamp(2rem, 9vw, 2.8rem);
+        }
+        /* details: one card per row, faces kept in frame */
+        .cards {
+          grid-template-columns: 1fr;
+          gap: 2.4rem;
+          text-align: center;
+        }
+        /* keep the card photos tall on phones, same shape as on desktop */
+        .card .pic {
+          aspect-ratio: 4 / 5;
+        }
+        .details .links .btn {
+          flex: 1 1 100%;
+          text-align: center;
+        }
+        /* countdown: four numbers must fit 320px */
+        .count-row {
+          gap: 1.1rem;
+        }
+        .count-row b {
+          font-size: clamp(2rem, 9vw, 2.8rem);
+        }
+        .count-row small {
+          font-size: 0.6rem;
+          letter-spacing: 0.18em;
+        }
+        /* smaller floating music button, out of the text's way */
+        .music-btn {
+          width: 40px;
+          height: 40px;
+          right: 0.9rem;
+          bottom: 0.9rem;
+        }
+        .wrap {
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+        }
+      }
+      /* tiny phones */
+      @media (max-width: 380px) {
+        body {
+          font-size: 16px;
+        }
+        .hero h2 {
+          font-size: 2.4rem;
+        }
+      }
+      /* ============ PETALS (fall once when the invitation opens) ============ */
+      #petals {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 45;
+        overflow: hidden;
+      }
+      .petal {
+        position: absolute;
+        top: -8vh;
+        border-radius: 60% 40% 55% 45% / 55% 45% 60% 40%;
+        opacity: 0;
+        will-change: transform;
+        box-shadow: 0 1px 3px rgba(42, 33, 26, 0.22);
+      }
+      /* phones with "Reduce Motion" on: the tap screen and petals still show,
+         the intro text simply appears without the fade-in */
+      @media (prefers-reduced-motion: reduce) {
+        #intro .over > * {
+          opacity: 1;
+          animation: none;
+          transform: none;
+        }
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- OPENING: brass lamps photo behind -->
+    <div
+      id="intro"
+      class="shot"
+      role="button"
+      tabindex="0"
+      aria-label="Open invitation"
+    >
+      <img
+        src="https://images.unsplash.com/photo-1760835249761-dc1ad2d7d759?w=1800&q=75&auto=format&fit=crop"
+        alt=""
+      />
+      <div class="over">
+        <img class="ganapati" src="ganapati.png" alt="Lord Ganapati" />
+        <p class="label">Shree Ganeshaya Namah</p>
+        <h1 class="serif">Sreelekshmi<em>&amp;</em>Pranav</h1>
+        <p class="date">Thursday, 17 December 2026</p>
+        <p class="label tap">Tap to open</p>
+      </div>
+    </div>
+
+    <div id="petals" aria-hidden="true"></div>
+
+    <header class="bar" id="bar">
+      <a class="logo" href="#top"
+        ><img src="ganapati.png" alt="" />S <em>&amp;</em> P</a
+      >
+      <nav>
+        <a href="#invite">Invitation</a>
+        <a href="#details">Muhurtham</a>
+        <a href="#family">Family</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <header class="hero" id="top">
+      <div class="bg" id="heroBg">
+        <img src="pic3.jpeg" alt="Sreelekshmi and Pranav" />
+      </div>
+      <div class="text">
+        <p class="label">The wedding of</p>
+        <h2 class="serif">Sreelekshmi <em>&amp;</em> Pranav</h2>
+
+        <div class="meta">
+          <span>Thursday, 17 December 2026</span>
+          <span>Muhurtham 12:25 PM</span>
+          <span>St. George College Auditorium, Aruvithura</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- PREVIOUS FIRST PAGE (arched frame on ivory), kept in case you want it back:
+    <div class="hero" id="top">
+      <div class="photo">
+        <div class="frame">
+          <span class="medal" aria-hidden="true">
+            <svg viewBox="0 0 34 22">
+              <path d="M17 1c4 4 5 9 0 17c-5-8-4-13 0-17z" />
+              <path d="M5 6c5 1 9 5 11 12C9 17 5 12 5 6z" opacity=".85" />
+              <path d="M29 6c-5 1-9 5-11 12c7-1 11-6 11-12z" opacity=".85" />
+              <path d="M1 13c5-1 10 2 14 6C8 21 3 18 1 13z" opacity=".6" />
+              <path d="M33 13c-5-1-10 2-14 6c7 2 12-1 14-6z" opacity=".6" />
+            </svg>
+          </span>
+          <img src="mainpic.jpeg" alt="Sreelekshmi and Pranav" />
+          <svg class="corner l" viewBox="0 0 42 42" aria-hidden="true">
+            <path d="M2 40V16c0-6 4-10 10-10h8" />
+            <path d="M8 40V22c0-4 2-6 6-6h6" opacity=".6" />
+            <circle cx="24" cy="6" r="1.6" fill="currentColor" stroke="none" />
+            <circle cx="2" cy="40" r="1.6" fill="currentColor" stroke="none" />
+          </svg>
+          <svg class="corner r" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M2 40V16c0-6 4-10 10-10h8" />
+            <path d="M8 40V22c0-4 2-6 6-6h6" opacity=".6" />
+            <circle cx="24" cy="6" r="1.6" fill="currentColor" stroke="none" />
+            <circle cx="2" cy="40" r="1.6" fill="currentColor" stroke="none" />
+          </svg>
+        </div>
+      </div>
+      <div class="text">
+        <p class="label">The wedding of</p>
+        <h2 class="serif">Sreelekshmi <em>&amp;</em> Pranav</h2>
+        <p class="date">Thursday, 17 December 2026</p>
+        <p class="where">St. George College Auditorium, Aruvithura</p>
+        <div class="links">
+          <a class="btn" href="#details">View details</a>
+        </div>
+      </div>
+    </div>
+    -->
+    <!-- INVITATION -->
+    <div class="wrap invite" id="invite">
+      <div class="pic reveal">
+        <img
+          src="https://images.unsplash.com/photo-1641730259879-ad98e7db7bcb?w=1000&q=75&auto=format&fit=crop"
+          alt="Brass statue of Lord Krishna playing the flute"
+          loading="lazy"
+        />
+      </div>
+      <div class="reveal">
+        <p class="label">With the blessings of the Almighty</p>
+        <h3 class="serif">You are warmly invited</h3>
+        <p class="parents serif">K. R. Vidyadharan Nair &amp; Anithakumari</p>
+        <p class="body">
+          With joyful hearts, we invite you and your family to the wedding of
+          our beloved daughter
+        </p>
+        <p class="couple serif">Sreelekshmi <em>with</em> Pranav</p>
+        <p class="body">
+          and request the pleasure of your company as they exchange their
+          wedding vows.
+        </p>
+      </div>
+    </div>
+
+    <!-- STATEMENT BAND: lit nilavilakku -->
+    <div class="band shot">
+      <img
+        src="brown1.jpeg"
+        alt=""
+        loading="lazy"
+        style="object-position: center 40%"
+      />
+      <div class="over reveal">
+        <p class="serif">Two families,<br /><em>one celebration</em></p>
+        <p class="label">Seventeenth of December · Aruvithura</p>
+      </div>
+    </div>
+
+    <!-- DETAILS -->
+    <div class="wrap details" id="details">
+      <p class="label">The muhurtham</p>
+      <h3 class="serif">When &amp; where</h3>
+      <div class="cards">
+        <div class="card reveal">
+          <div class="pic">
+            <img src="guru.jpeg" alt="Blush roses" loading="lazy" />
+          </div>
+          <p class="label">Date</p>
+          <p class="serif">Thursday, 17 December 2026</p>
+        </div>
+        <div class="card reveal">
+          <div class="pic">
+            <img src="IMG2.jpeg" alt="Lit diya" loading="lazy" />
+          </div>
+
+          <p class="label">Muhurtham</p>
+          <p class="serif">12:25 – 12:50 PM</p>
+          <p class="sub">The auspicious hour</p>
+        </div>
+        <div class="card reveal">
+          <div class="pic">
+            <img src="garland.jpeg" alt="Floral arch" loading="lazy" />
+          </div>
+          <p class="label">Venue</p>
+          <p class="serif">St. George College Auditorium</p>
+          <p class="sub">Aruvithura, Kottayam</p>
+        </div>
+        <div class="card reveal">
+          <div class="pic">
+            <img
+              src="piccc.jpeg"
+              alt="Sreelekshmi and Pranav"
+              loading="lazy"
+              style="object-position: center 25%"
+            />
+          </div>
+          <p class="label">Blessings</p>
+          <p class="serif">Your presence is our blessing</p>
+          <p class="sub">Join us and be a part of our celebration.</p>
+        </div>
+      </div>
+      <div class="links">
+        <a
+          class="btn"
+          href="https://www.google.com/maps/search/?api=1&query=St.+George+College+Auditorium+Aruvithura"
+          target="_blank"
+          rel="noopener"
+          >Directions</a
+        >
+        <a class="btn" id="calLink" href="#" target="_blank" rel="noopener"
+          >Add to calendar</a
+        >
+      </div>
+    </div>
+
+    <!-- COUNTDOWN: flowers in a brass urli -->
+    <div class="count shot">
+      <img
+        src="https://images.unsplash.com/photo-1641296834354-a0deed5244fc?w=1800&q=75&auto=format&fit=crop"
+        alt=""
+        loading="lazy"
+      />
+      <div class="over">
+        <p class="label">Counting down</p>
+        <div class="count-row">
+          <div><b id="d">00</b><small class="label">Days</small></div>
+          <div><b id="h">00</b><small class="label">Hours</small></div>
+          <div><b id="m">00</b><small class="label">Minutes</small></div>
+          <div><b id="s">00</b><small class="label">Seconds</small></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAMILY -->
+    <div class="wrap family" id="family">
+      <p class="label">Sharing happiness</p>
+      <p class="names serif reveal">
+        Gouri <em>&amp;</em> Gourav<br />Sreevidya <em>&amp;</em> Mahesh <br />
+        K.N Raveendran Nair
+      </p>
+    </div>
+
+    <footer>
+      <img class="ganapati" src="ganapati.png" alt="" />
+      <p class="serif">Sreelekshmi &amp; Pranav</p>
+      <p class="label">17 · 12 · 2026</p>
+      <p class="credit">..</p>
+    </footer>
+
+    <!-- MUSIC (drop a music.mp3 next to this file; button hides itself if missing) -->
+    <audio id="bgm" loop preload="auto">
+      <source src="kananayal.mpeg" type="audio/mpeg" />
+    </audio>
+    <button
+      class="music-btn"
+      id="musicBtn"
+      aria-label="Play music"
+      title="Play music"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path id="musicPath" d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z" />
+      </svg>
+    </button>
+
+    <script>
+      /* background music */
+      const bgm = document.getElementById("bgm")
+      const musicBtn = document.getElementById("musicBtn")
+      const musicPath = document.getElementById("musicPath")
+      const NOTE = "M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z"
+      const PAUSE = "M7 5h3v14H7zM14 5h3v14h-3z"
+      bgm.volume = 0.5
+      // no music file present: hide the toggle instead of showing a dead button
+      bgm.querySelector("source").addEventListener("error", () => {
+        musicBtn.hidden = true
+      })
+      function setMusicUI(playing) {
+        musicPath.setAttribute("d", playing ? PAUSE : NOTE)
+        musicBtn.setAttribute(
+          "aria-label",
+          playing ? "Pause music" : "Play music",
+        )
+      }
+      musicBtn.addEventListener("click", () => {
+        if (bgm.paused)
+          bgm
+            .play()
+            .then(() => setMusicUI(true))
+            .catch(() => {})
+        else {
+          bgm.pause()
+          setMusicUI(false)
+        }
+      })
+
+      /* opening: the tap is the user gesture browsers need before audio may play */
+      const intro = document.getElementById("intro")
+      function openSite() {
+        if (document.body.classList.contains("opened")) return
+        document.body.classList.add("opened")
+        bgm
+          .play()
+          .then(() => setMusicUI(true))
+          .catch(() => {})
+        intro.classList.add("gone")
+        startPetals()
+        setTimeout(() => (intro.style.display = "none"), 1100)
+      }
+      intro.addEventListener("click", openSite)
+      intro.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") openSite()
+      })
+
+      /* petals: jasmine white, cream and kasavu gold; drift down for ~8 seconds after the tap */
+      const petalLayer = document.getElementById("petals")
+      const petalColours = [
+        "#FFFDF7",
+        "#FFFDF7",
+        "#F3E9D2",
+        "#EEDDBB",
+        "#E2C48C",
+        "#C9A45C",
+      ]
+      function spawnPetal() {
+        const p = document.createElement("span")
+        p.className = "petal"
+        const size = 7 + Math.random() * 11
+        p.style.width = size + "px"
+        p.style.height = size * 0.72 + "px"
+        p.style.left = Math.random() * 100 + "vw"
+        p.style.background =
+          petalColours[Math.floor(Math.random() * petalColours.length)]
+        const dur = 8 + Math.random() * 3,
+          drift = Math.random() * 220 - 110,
+          rot = Math.random() * 720 - 360
+        p.animate(
+          [
+            { transform: "translate(0,0) rotate(0deg)", opacity: 0 },
+            { opacity: 0.85, offset: 0.1 },
+            { opacity: 0.85, offset: 0.85 },
+            {
+              transform: `translate(${drift}px,112vh) rotate(${rot}deg)`,
+              opacity: 0,
+            },
+          ],
+          { duration: dur * 1000, easing: "linear" },
+        )
+        petalLayer.appendChild(p)
+        setTimeout(() => p.remove(), dur * 1000)
+      }
+      function startPetals() {
+        const timer = setInterval(spawnPetal, 250)
+        for (let i = 0; i < 6; i++) setTimeout(spawnPetal, i * 150)
+        setTimeout(() => clearInterval(timer), 8000) // stop new petals after 8s; the rest finish falling
+      }
+
+      /* header: transparent over the photo, solid ivory after scrolling */
+      const bar = document.getElementById("bar")
+      const heroBg = document.getElementById("heroBg")
+      let heroTick = false
+      addEventListener(
+        "scroll",
+        () => {
+          bar.classList.toggle("scrolled", scrollY > 60)
+          if (!heroTick) {
+            heroTick = true
+            requestAnimationFrame(() => {
+              heroBg.style.transform = `translateY(${scrollY * 0.22}px)`
+              heroTick = false
+            })
+          }
+        },
+        { passive: true },
+      )
+
+      /* reveal on scroll */
+      const io = new IntersectionObserver(
+        (es) =>
+          es.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("in")
+              io.unobserve(e.target)
+            }
+          }),
+        { threshold: 0.15 },
+      )
+      document.querySelectorAll(".reveal").forEach((el) => io.observe(el))
+
+      /* countdown — muhurtham in IST (UTC+5:30), fixed regardless of viewer timezone */
+      const target = new Date("2026-12-17T12:25:00+05:30").getTime()
+      const el = (id) => document.getElementById(id)
+      const pad = (n) => String(n).padStart(2, "0")
+      function tick() {
+        const diff = Math.max(0, target - Date.now())
+        el("d").textContent = pad(Math.floor(diff / 864e5))
+        el("h").textContent = pad(Math.floor((diff % 864e5) / 36e5))
+        el("m").textContent = pad(Math.floor((diff % 36e5) / 6e4))
+        el("s").textContent = pad(Math.floor((diff % 6e4) / 1e3))
+      }
+      tick()
+      setInterval(tick, 1000)
+
+      /* add to Google Calendar (12:25–12:50 IST = 06:55–07:20 UTC) */
+      el("calLink").href =
+        "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+        "&text=" +
+        encodeURIComponent("Wedding of Sreelekshmi & Pranav") +
+        "&dates=20261217T065500Z/20261217T072000Z" +
+        "&location=" +
+        encodeURIComponent("St. George College Auditorium, Aruvithura") +
+        "&details=" +
+        encodeURIComponent("Muhurtham 12:25 PM – 12:50 PM")
+    </script>
+  </body>
+</html>
